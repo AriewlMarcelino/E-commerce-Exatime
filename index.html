@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,20 @@
     <!-- fivcom -->
     <link rel="shortcut icon" href="/Assets/img/favicon.ico" type="image/x-icon">
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- google  fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Nav -->
     <nav class="navbar navbar-expand-lg primary-bg-color py-4 px-2" id="navbar">
@@ -25,9 +32,10 @@
             <a href="#" class="nav-brand">Exatime</a>
             <div id="navbar-items">
                 <div></div>
-                <form class="d-flex" id="search-form">
-                    <i class="bi bi-search primary-color"></i>
-                    <input type="search" class="form-control me-2" placeholder="Busque o seu relogio" aria-label="search">
+                <form class="d-flex" id="rsearch-form">
+                    <i class="bi bi-search primay-color"></i>
+                    <input type="search" class="form-control me-2" placeholder="Busque o seu relogio"
+                        aria-label="search">
                     <button class="btn secondary-bg-color" type="submit">Pesquisar</button>
                 </form>
                 <ul class="navbar-nav mb2 mb-lg-0">
@@ -53,6 +61,76 @@
             </div>
         </div>
     </nav>
-    
+    <!-- Bottom navbar -->
+    <nav class="navbar navbar-expand-lg secondary-bg-color p-2" 
+    id="bottom-navbar-container">
+        <div class="container">
+            <buttom class="navbar-toggler"
+             type="button"
+              data-bs-toggle="collapse"
+               data-bs-target="#bottom-navbar"
+                aria-expanded="false"
+                 aria-controls="bottom-navbar"
+                  aria-label="toggle navigation">
+                <i class="bi bi-list"></i>
+            </buttom>
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse" id="bottom-navbar">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Promoçoes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Banners -->
+    <div class="container" id="banners-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Banner1 -->
+                <div class="carousel-item active">
+                    <img src="/Assets/img/insta2.jpg" alt="insta2" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption primary-bg-color">
+                        <h5>Relogios de luxo</h5>
+                        <p>Para voce estar pronto em qualquer situação</p>
+                    </div>
+                </div>
+                <!-- Banner2 -->
+                <div class="carousel-item">
+                    <img src="/Assets/img/insta1.jpg" alt="insta1" class="d-block w-100 img-fluid">
+                    <div class="carousel-caption primary-bg-color">
+                        <h5>Relogios de luxo</h5>
+                        <p>Para voce estar pronto em qualquer situação</p>
+                    </div>
+                </div>
+            </div>
+            <!-- item2 -->
+            <!-- Buttom prev -->
+            <buttom class="carousel-control-prev"
+             type="buttom" 
+             data-bs-target="#slider"
+              data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                <span class="visually-hidden">previous</span>
+            </buttom>
+            <!-- Buttom-next -->
+            <buttom class="carousel-control-next" type="buttom" data-bs-target="#slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                <span class="visually-hidden">Next</span>
+            </buttom>
+        </div>
+    </div>
 </body>
+
 </html>

@@ -114,7 +114,7 @@ body{
 
 @media(min-width:768px){
     #search-form{
-        width: 50%;
+        width:50%;
         margin: 0;
     }
 }
@@ -138,3 +138,19 @@ body{
 #search-form input::placeholder{
     color: white;
 }
+
+/* Bottom navbar */
+
+#bottom-navbar-container .container{
+    justify-content: flex-end;
+}
+
+#bottom-navbar-container a{
+    font-weight: 600;
+    color: white;
+}
+
+.navbar-togller{
+    font-size: 1.5em;
+}
+
