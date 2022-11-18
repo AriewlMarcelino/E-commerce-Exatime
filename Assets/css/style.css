@@ -2,6 +2,10 @@
     font-family: 'Montserrat','sans-serif';
 }
 
+#body{
+    background: #1c1c1c;
+}
+
 body{
     background-color: #252525;
     color: #fff;
@@ -13,6 +17,7 @@ body{
 
 .secondary-bg-color{
     background-color: #C09578;
+    color: #101010;
 }
 
 .light-bg-color{
@@ -36,6 +41,10 @@ body{
 }
 
 /* NAV BAR */
+
+#navbar{
+    height: 184px;
+}
 
 #navbar .navbar-nav{
     flex-direction: row;
@@ -79,7 +88,7 @@ body{
     left: 20px;
 }
 
-.btn.secondary-bg-color{
+#btn.secondary-bg-color{
     background-color: #C09578;
 }
 
@@ -155,15 +164,31 @@ body{
 }
 
 #banners-container{
-    padding: 0;
+    padding: 0
 }
 
+
 .carousel-caption{
-    bottom: 5em;
-    padding: 1em;
-    left: 12%;
-    right: 12%;
+    position: relative;
+    right: 15%;
+    bottom: 15.25em;
+    left: 15%;
+    height: 230px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    background-color: rgba(0,0,0,.8);
+    background-blend-mode: darken;
+    text-align: center;
+    display: grid;
+    align-items: center;
 }
+
+#box-card{
+    height: 510px;
+    margin: 10px;
+}
+
 
 .carousel-caption h5{
     font-size: 1.8em;
@@ -191,9 +216,18 @@ body{
     z-index: 10;
 }
 
-#mini-banners .col-12{
+
+element.style {
+}
+@media (min-width: 768px){
+    #mini-banners .col-12 {
+        max-width: 30%;
+    } 
+}
+
+#mini-banners .col-12 {
     z-index: 1;
-    height: 320px;
+    height: 450px;
     padding: 1.5em;
     position: relative;
     display: flex;
@@ -263,6 +297,74 @@ body{
     text-transform: uppercase;
 }
 
+/* Best Seller */
+
+#best-sellers{
+    padding: 4em 0;
+}
+
+#best-sellers .row{
+    margin: 0;
+}
+
+#best-sellers .col-md-3{
+    padding: 0;
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 900;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    align-items: center;
+}
+@media(min-width:768px;){
+    .title{
+        text-align: left;
+    }
+}
+
+.card{
+    text-align: center;
+    border-radius: 0;
+}
+
+#body-1,
+#body-2,
+#body-3,
+#body-4{
+    position: relative;
+    bottom: 27px;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+.card img{
+    width: 140px;
+    margin: 2em auto;
+}
+
+.card .card-category{
+    font-size: 30px;
+    background-color: #c0957876;
+    color: rgb(82, 82, 82);
+}
+
+.crad .card-text{
+    margin: 2em 0;
+    font-weight: bold;
+}
+
+#btn a{
+    background-color:#C09578;
+    border: #c09578;
+}
+
+#btn:hover{
+    background-color: #C09578;
+    border: #C09578;
+}
 
 
 
