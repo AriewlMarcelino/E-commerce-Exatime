@@ -122,29 +122,33 @@ body{
 }
 
 @media(min-width:768px){
-    #search-form{
+    #search-form,#news-form{
         width:50%;
         margin: 0;
     }
 }
 
-#search-form{
+#search-form,
+#news-form{
     border: solid 2px #626262;
     border-radius: 3px;
     padding: 5px 15px;
 }
 
-#search-form input{
+#search-form input,
+#news-form input{
     background-color: transparent;
     border: none;
     color: #fff;
 }
 
-#search-form input:focus{
+#search-form input:focus,
+#news-form input:focus{
     box-shadow: none;
 }
 
-#search-form input::placeholder{
+#search-form input::placeholder,
+#news-form input::placeholder{
     color: white;
 }
 
@@ -524,5 +528,84 @@ element.style {
     color: #c09578;
     font-weight: bold;
     font-size: 2em;
-    margin-top: -15px;
+    margin-top: -11px;
 }
+
+/* footer newsletter */
+
+#newsletter-container{
+    border-bottom: 1px solid #626262;
+    text-align:center;
+    padding: 20px;
+}
+
+.h3-footer{
+    color: white;
+}
+
+.a-li-footer{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #626262;
+}
+
+#news-form{
+    max-width: 600px;
+    margin: 15px auto;
+    border: solid 1px white;
+}
+
+#news-form i{
+    font-size: 1.5em;
+    color: white;
+    display: flex;
+}
+
+#news-form .btn{
+    color: #fff;
+}
+
+.form-control{
+    border:solid 1px  white;
+
+}
+
+#social-container{
+    margin: 20px auto;
+}
+
+#social-container i{
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+    color: #626262;
+    transition: .3s;
+}
+
+#social-container i:hover{
+    color: #C09578;
+}
+
+/* copy conatiner*/
+
+#copy-container{
+    text-align: center;
+    padding: 30px;
+}
+
+#input-newsletter{
+    background-color: transparent;
+    color: #fff;
+    margin: 0px 0 0 13px;
+    width: 237px;
+}
+
+.bi-envelope{
+    position: relative;
+    top: 5px;
+}
+
+.p-footer{
+    color: white;
+}
+
