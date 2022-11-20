@@ -318,7 +318,7 @@ element.style {
     margin-bottom: 1em;
     align-items: center;
 }
-@media(min-width:768px;){
+@media(min-width:768px){
     .title{
         text-align: left;
     }
@@ -351,7 +351,7 @@ element.style {
     color: rgb(82, 82, 82);
 }
 
-.crad .card-text{
+.card .card-text{
     margin: 2em 0;
     font-weight: bold;
 }
@@ -366,6 +366,163 @@ element.style {
     border: #C09578;
 }
 
+/* Bottom Banner  */
 
+#bottom-banner{
+    background-color: #101010;
+    padding: 6em;
+    margin-bottom: 4em;
+    text-align: center;
+}
 
+#bottom-banner .offer-subtitle,
+#bottom-banner h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 
+#bottom-banner .btn{
+    margin: 2em;
+    font-weight: 1em;
+    padding: 1em;
+}
+
+#bottom-banner img{
+    max-width: 175px;
+}
+
+@media(min-width:768px){
+    #bottom-banner h2{
+        font-size: 6em;
+    }
+}
+
+/* New products */
+
+#new-products{
+    margin-bottom: 6em;
+    
+}
+
+#new-products-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: relative;
+    background-color: #101010;
+    top: 9px;
+    padding-top: 39px;
+}
+
+#new-products-banner h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+}
+
+#new-products .col-md-4{
+    padding: 0;
+}
+
+#new-products .card img{
+    height: 150px;
+    width: 90px;
+    margin: 2em auto;
+}
+
+.secondary-color {
+    color: white;
+    margin-top: 31px;
+    padding-left: 0px;
+    padding: 10px;
+}
+
+/* Gallery */
+
+#gallery .image-container{
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    cursor: pointer;
+    transition: .5s;
+    border: 3px solid #101010;
+}
+
+#gallery .image-container:hover{
+    border-color: #c09578;
+}
+
+#insta1{
+    background-image: url(/Assets/img/insta1.jpg);
+}
+
+#insta2{
+    background-image: url(/Assets/img/insta2.jpg);
+}
+
+#insta3{
+    background-image: url(/Assets/img/insta3.jpg);
+}
+
+#insta4{
+    background-image: url(/Assets/img/insta4.jpg);
+}
+
+#insta5{
+    background-image: url(/Assets/img/insta5.jpg);
+}
+
+#insta6{
+    background-image: url(/Assets/img/insta6.jpg);
+}
+
+/* Footer */
+
+#footer-links-container{
+    border-bottom: 1px solid #626262;
+}
+
+#footer .footer-column{
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@media(min-width:768){
+    #footer .footer-column{
+        padding: 5em 2em;
+    }
+}
+
+#footer-links-container h3{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#footer-links-container li{
+    font-size: .8em;
+    text-align: center;
+}
+
+#footer-links-container a{
+    text-decoration: none;
+}
+
+#footer-links-container a:hover{
+    color: #C09578;
+}
+
+#footer-center{
+    border-left: 1px solid #626262;
+    border-right: 1px solid #626262;
+}
+
+#footer-center .store-phone{
+    color: #c09578;
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: -15px;
+}
